@@ -5,7 +5,7 @@
 
 ------
 
-## 📌 项目简介
+##  项目简介
 
 本项目是一个面向微博平台的多模块数据采集系统，能够：
 
@@ -18,7 +18,7 @@
 
 ------
 
-## 🗂️ 项目结构
+## 项目结构
 
 ```
 weibo-hot-search/
@@ -32,7 +32,7 @@ weibo-hot-search/
 
 ------
 
-## 🗄️ 数据库结构
+##  数据库结构
 
 程序会在首次运行时**自动建表**，无需手动执行 SQL。
 
@@ -44,7 +44,7 @@ weibo-hot-search/
 
 ------
 
-## ⚙️ 环境要求
+## 环境要求
 
 - Python 3.8+
 - MySQL 5.7+ / 8.0+
@@ -57,7 +57,7 @@ pip install requests pymysql beautifulsoup4 schedule
 
 ------
 
-## 🚀 快速开始
+##  快速开始
 
 ### 第一步：创建数据库
 
@@ -74,6 +74,8 @@ CREATE DATABASE weibo DEFAULT CHARACTER SET utf8mb4;
 3. 随意点击一个请求 → Request Headers → 找到 `Cookie` 字段
 4. 复制完整的 Cookie 字符串
 <img width="1266" height="299" alt="1f03dfc9213016027f4d9d1b7b85bca9" src="https://github.com/user-attachments/assets/b7ab359b-2dc5-4eea-af54-59853c564782" />
+![Uploading 9a55a87ebf8e9a56f1e948d39ac0155b.png…]()
+
 需要修改的东西很少 基本上可以直接拿来用，在这里填入你的cookie以及你的数据库 密码就好了
 
 
@@ -111,9 +113,10 @@ python main_hot_topic.py
 
 ------
 
-## 🔧 工具脚本
+## 工具脚本
 
 ### fix_counts.py — 补全互动数
+如果你的的点赞/评论/转发数均为 0即可以用这个脚本启动运行来补齐数据
 
 若爬取时部分微博的点赞/评论/转发数均为 0（HTML 解析未取到），可运行此脚本，通过微博 API 逐条补全：
 
@@ -125,7 +128,7 @@ python -X utf8 fix_counts.py
 
 ------
 
-## 📊 采集流程
+## 采集流程
 
 ```
 每轮定时任务
@@ -142,7 +145,7 @@ python -X utf8 fix_counts.py
 
 ------
 
-## ⚠️ 注意事项
+## 注意事项
 
 - **Cookie 有效期**：微博 Cookie 通常有效期为数天至数周，失效后需重新获取。程序检测到重定向至登录页时会自动提示。
 - **请求频率**：已内置随机延迟（关键词间隔 3 秒、用户请求间隔 1.5 秒、每 50 条暂停 5 秒），请勿擅自调低，以免触发封禁。
