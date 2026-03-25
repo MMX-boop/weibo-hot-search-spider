@@ -1,4 +1,4 @@
-[微博热搜话题实时采集系统.md](https://github.com/user-attachments/files/26230778/default.md)
+[微博热搜话题实时采集系统.md]
 #  微博热搜话题实时采集系统
 
 > 自动抓取微博热搜榜单、相关微博内容及用户资料，存入 MySQL，支持定时循环采集。
@@ -73,6 +73,9 @@ CREATE DATABASE weibo DEFAULT CHARACTER SET utf8mb4;
 2. 按 `F12` 打开开发者工具 → Network 标签
 3. 随意点击一个请求 → Request Headers → 找到 `Cookie` 字段
 4. 复制完整的 Cookie 字符串
+<img width="1266" height="299" alt="1f03dfc9213016027f4d9d1b7b85bca9" src="https://github.com/user-attachments/assets/b7ab359b-2dc5-4eea-af54-59853c564782" />
+需要修改的东西很少 基本上可以直接拿来用，在这里填入你的cookie以及你的数据库 密码就好了
+
 
 ### 第三步：修改配置
 
