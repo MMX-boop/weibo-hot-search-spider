@@ -74,7 +74,7 @@ CREATE DATABASE weibo DEFAULT CHARACTER SET utf8mb4;
 3. 随意点击一个请求 → Request Headers → 找到 `Cookie` 字段
 4. 复制完整的 Cookie 字符串
 <img width="1266" height="299" alt="1f03dfc9213016027f4d9d1b7b85bca9" src="https://github.com/user-attachments/assets/b7ab359b-2dc5-4eea-af54-59853c564782" />
-![Uploading 9a55a87ebf8e9a56f1e948d39ac0155b.png…]()
+<img width="1212" height="393" alt="bd5471806bfb95772a1b3eab2c389e4d" src="https://github.com/user-attachments/assets/7fe4d93f-1bf9-45c3-91b2-bf2fa6e1c0b3" />
 
 需要修改的东西很少 基本上可以直接拿来用，在这里填入你的cookie以及你的数据库 密码就好了
 
